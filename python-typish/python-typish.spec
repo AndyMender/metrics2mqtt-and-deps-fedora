@@ -42,8 +42,7 @@ checks considering generics and typesafe duck-typing.
 %check
 # skip tests which don't work in Python 3.9
 # https://github.com/ramonhagenaars/typish/issues/18
-%pytest -v tests -k 'not test_instance_of_union \
-and not test_is_type_annotation and not test_subclass_of_union' 
+%pytest -v tests -k 'not test_instance_of_union and not test_is_type_annotation and not test_subclass_of_union' 
 
 %files -n python3-%{pypi_name}
 %doc README.md
